@@ -1,4 +1,15 @@
 <?php
+
+/*-------------- Look for Stylesheets--------------- */
+wp_enqueue_style( 'multilevelpushmenu', get_template_directory_uri() . '/css/multilevelpushmenu.css',false,'1.1','all');
+
+/*-------------- Look for JavaScript--------------- */
+
+wp_enqueue_script( 'multilevelpushmenuu', get_template_directory_uri() . '/js/multilevelpushmenuu.js', array ( 'jquery' ), '1.1', true);
+
+
+
+
 /*-------------- Enable Widgets--------------- */
 
 function blank_widgets_init() {
@@ -85,9 +96,9 @@ function blank_widgets_init() {
         'after_title'   => '</h3>'
 		));
 
-	/* Latest News Widget */
+	/* Recent News Widget SIDEBAR */
 	register_sidebar( array(
-		'name'	 		=> ('News Widget'),
+		'name'	 		=> ('News Widget Sidebar'),
 		'id' 	 		=> 'news-widget',
 		'description'	=> 'Latest News widget',
 		'before_widget' => '<div class="widget-news">',
@@ -96,6 +107,38 @@ function blank_widgets_init() {
         'after_title'   => '</h3>'
 		));
 
+	/* Recent News Widget HOMEPAGE*/
+	register_sidebar( array(
+		'name'	 		=> ('News Widget Homepage'),
+		'id' 	 		=> 'news-widget-homepage',
+		'description'	=> 'Recent News Homepage widget',
+		'before_widget' => '<div class="widget-news">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h2>',
+				'after_title'   => '</h2>'
+		));
+
+	/* Learning Center Widget SIDEBAR */
+	register_sidebar( array(
+		'name'	 		=> ('Learning Widget Sidebar'),
+		'id' 	 		=> 'learning-widget',
+		'description'	=> 'Learning Center Sidebar widget',
+		'before_widget' => '<div class="widget-learning-news">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>'
+		));
+
+	/* Learning Center Widget HOMEPAGE*/
+	register_sidebar( array(
+		'name'	 		=> ('Learning Widget Homepage'),
+		'id' 	 		=> 'learning-widget-homepage',
+		'description'	=> 'Learning Center Homepage widget',
+		'before_widget' => '<div class="widget-learning">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h2>',
+				'after_title'   => '</h2>'
+		));
 
 	/* Subscribe Widget */
 	register_sidebar( array(

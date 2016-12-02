@@ -8,18 +8,19 @@ License: Open
 Text Domain: slice-company-thig-template
 */
 
-
+/*font-family: 'Source Sans Pro', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
 
 html, body {
-    line-height: 1.5em;
+    line-height: 1.8em;
     background-color: #fff;
-    font-family: 'Avenir Next';
+    font-family: 'Open Sans', sans-serif;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Avenir Next';
     src: url(fonts/AvenirNextLTPro-Cn.otf);
-}
+}*/
 
 .visuallyhidden {
     border: 0;
@@ -34,19 +35,19 @@ html, body {
 }
 
 h1 {
-  font-family: 'Playfair Display';
+  font-family: 'Source Sans Pro', sans-serif;
   color: #222222;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-family: 'Playfair Display';
+  font-family: 'Source Sans Pro', sans-serif;
   color: #006998;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 h3 {
-  font-family: 'Playfair Display';
+  font-family: 'Source Sans Pro', sans-serif;
   color: #006998;
   font-size: 22px;
 }
@@ -57,9 +58,9 @@ h3 {
 
 
 p {
-  font-family: 'Avenir Next';
+  font-family: 'Open Sans', sans-serif;
   color: #222222;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 10px;
 }
 
@@ -84,8 +85,8 @@ p {
 .globalmenu ul li a {
     padding: 10px;
     color: #222222;
-    font-family: 'Avenir Next';
-    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
     text-transform: uppercase;
 }
 
@@ -124,9 +125,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .navbar-default {
     border: none;
     background: white;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: black;
     padding-top: 20px;
+}
+
+.dropdown-menu {
+    font-size: .8em;
+    padding-top: 0.5em;
 }
 
 @media screen and (max-width: 991px) {
@@ -186,7 +192,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .topmenu ul li a {
     padding: 10px;
     color: #222222;
-    font-family: 'Avenir Next';
+    font-family: 'Open Sans', sans-serif;
     font-size: 2.2rem;
 }
 
@@ -219,7 +225,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 /* --- Breadcrumbs Menu ---*/
 .breadcrumbs {
-    text-align: center;
+    margin-left: 20px;
     font-size: 1.2em;
 }
 
@@ -243,7 +249,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 footer {
     background-color: #006998;
     clear: both;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 
 .topfooter {
@@ -256,18 +262,18 @@ footer {
 }
 
 .topfooter {
-    font-family: 'Avenir Next';
+    font-family: 'Open Sans', sans-serif;
 }
 
 .topfooter ul li, .topfooter p {
     list-style: none;
-    padding-left: 10px;
     margin-bottom: 0;
 }
 
 .topfooter a, .topfooter a p {
     color: #fff;
     font-size: 1.6rem;
+    font-family: Source Sans Pro;
 }
 
 .topfooter a:hover {
@@ -280,6 +286,10 @@ footer {
 
 .topfooter li {
       margin-left: -40px;
+}
+
+.socialmediafooter {
+  padding-top: 25px;
 }
 
 @media screen and (min-width: 992px) {
@@ -297,11 +307,13 @@ footer {
 
 
 .footer3 img {
-    display: block;
+    /*display: block;*/
+    padding-top: 17px;
     margin: auto;
 }
 
 .footerlogo img {
+    padding-top: 17px;
     display: block;
     margin: auto;
 }
@@ -310,6 +322,10 @@ footer {
     font-style: italic;
     text-align: center;
     color: #fff;
+}
+
+.socialfooterimg {
+  padding: 4px;
 }
 
 .socialfooter {
@@ -360,7 +376,7 @@ footer {
 @media screen and (min-width: 992px) {
     .bottomfooter {
         text-align: left;
-        padding: 20px 45px 35px 10px;
+        padding: 12px 45px 35px 10px;
     }
     .bottomfooter p {
         padding-left: 15px;
@@ -383,7 +399,7 @@ footer {
 }
 
 .search-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: underline;
 }
 
@@ -416,7 +432,7 @@ footer {
 }
 
 .menu-sub-menu-for-pages-container > ul > li {
-  font-family: 'Playfair Display';
+  font-family: 'Source Sans Pro', sans-serif;
   color: #006998;
   margin-bottom: 10px;
 }
@@ -427,7 +443,8 @@ footer {
   margin-left: -30px;
   margin-bottom: 10px;
   border-bottom: 1px solid #222222;
-  font-family: 'Avenir Next';
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
 }
 
 .menu-sub-menu-for-pages-container ul li ul li {
@@ -463,14 +480,18 @@ footer {
 }
 
 .widget-intro, .widget-agent, .widget-subscribe, .widget-claim, .widget-quote, .widget-news {
-  padding: 30px;
+  padding: 18px;
   width: 100%;
   /*max-width: 340px;*/
   margin: auto;
 }
 
+.agent, .subscribe {
+  padding: 18px;
+}
+
 @media screen and (min-width: 992px) {
-    .widget-agent {
+    .widget-quote {
         padding-top: 0;
     }
 }
@@ -497,9 +518,13 @@ footer {
   }
 }
 
+.widget-quote p, .widget-subscribe p {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+}
+
 .quote {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  /*margin-top: 40px;*/
   background: #C4DFE0;
 }
 
@@ -507,6 +532,7 @@ footer {
   text-align: center;
   font-size: 3.5rem;
   line-height: 1.5em;
+  padding-top: 0.5em;
 }
 
 .quote label, .agent label, .subscribeform label {
@@ -562,7 +588,7 @@ footer {
 }
 
 .submit-button {
-  width: 125px;
+  /*width: 125px;*/
   padding: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -588,19 +614,29 @@ footer {
 
 @media screen and (min-width: 992px) {
   .quote select, .quote-zipcode {
-    margin: 10px;
+    margin: 10px auto;
     display: inline;
   }
 }
 
 .products {
   background-color: #C4DFE0;
-  margin-bottom: 40px;
 }
 
 .widget-products {
     text-align: center;
+    padding-top: 10px;
 }
+
+@media screen and (min-width: 992px) {
+  .products {
+    margin-bottom: 40px;
+  }
+  .widget-products {
+    padding-top: 30px;
+  }
+}
+
 
 /* --- Product Slider ---*/
 .metaslider .caption-wrap {
@@ -650,7 +686,6 @@ footer {
 
 .social-media-bar img {
   padding: 15px;
-  width: 19%;
 }
 
 .claim, .products {
@@ -696,7 +731,7 @@ footer {
 }
 
 .borderradius h3 {
-  font-size: 3.7rem;
+  font-size: 4.2rem;
   color: #fff;
   text-align: center;
 }
@@ -705,39 +740,80 @@ footer {
   background-color: #C4DFE0;
 }
 
-.widget-news {
+.subscribe h2, .agent h2, .learning h2, .widget-news h2 {
     text-align: center;
 }
 
 @media screen and (min-width: 992px) {
-  .widget-news {
+  .widget-news, .learning h2, .widget-news h2 {
     text-align: left;
   }
 }
 
 .widget-news ul {
-  margin-left: -40px;
+  max-width: 350px;
+  margin: auto;
 }
 
-.widget-news ul li {
+.widget-news ul li, .widget-learning-news ul li {
   list-style: none;
-  font-family: 'Playfair Display';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.widget-news a {
+.widget-news a, .widget-learning-news a {
   color: #222222;
   display: block;
   clear: both;
 }
 
-.post-date {
+.sidebar .widget-learning-news h3, .sidebar .widget-learning-news ul {
+  margin-left: 20px;
+}
+
+.post-date, .widget-learning-news ul li div.rpwwt-post-date, .widget-news ul li div.rpwwt-post-date {
   display: block;
   margin-left: 20px;
   font-weight: 300;
 }
+
+.widget-learning {
+  padding: 18px;
+}
+
+.widget-learning ul {
+  margin: auto;
+  width: 350px;
+}
+
+.widget-learning ul li {
+  vertical-align: top;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+}
+
+@media screen and (min-width: 992px) {
+  .widget-learning {
+    margin-left: 18px;
+    text-align: left;
+  }
+  .widget-learning ul, .widget-news ul {
+    width: 100%;
+    max-width: 1200px;
+  }
+  .widget-learning ul li {
+    display: inline-block;
+    width: calc(100% / 3 - 3px);
+  }
+}
+
+/*.widget-learning ul li img {
+  float: none;
+}*/
 
 /* SEARCH FORM */
 .wie-search-form .screen-reader-text {
@@ -834,6 +910,7 @@ overflow: hidden;
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .datesocialmedia {
@@ -859,14 +936,44 @@ overflow: hidden;
 }
 
 .post-content img {
-  /*float: left;*/
+  float: left;
   display: inline;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+.post-content, .post-content p {
+  font-family: 'Source Sans Pro';
+  font-size: 1.6rem;
 }
 
 
+/* ARCHIVES */
+
+.archives img {
+  float: left;
+  clear: both;
+  margin-right: 20px;
+}
+
+.archives p {
+  margin-bottom: 40px;
+}
+
+/*@media screen and (min-width: 992px) {
+  .post {
+    padding: 20px;
+  }
+}*/
+
+/*.post-content ul li {
+  font-size: 1.8rem;
+}*/
+
 /* SECTION PAGE */
+/*.sidebar-section {
+  margin-top: 2em;
+}*/
 
 .section img {
   float: left;
@@ -875,13 +982,23 @@ overflow: hidden;
   margin-top: 10px;
 }
 
+@media screen and (min-width: 649px) {
 .section h2+p {
   margin-left: 90px;
+  }
 }
 
+/* ---------------HEAD----------------*/
+/*.section p, .section h2, .section h3 {
+||||||| merged common ancestors
 .section p, .section h2, .section h3 {
+=======
+/* If alignment breaks - check here first and add code back */
+
+/*.section p, .section h2, .section h3 {
+>>>>>>> 18c3a66402712be5c76de5ac217ba3155528f442
   float: left;
-}
+}*/
 
 .post-thumbnail img {
   margin-bottom: 20px;
@@ -894,11 +1011,23 @@ overflow: hidden;
   clear: both;
 }
 
+.sidebar-color {
+  background: #C4DFE0;
+  text-align:center;
+}
+
 @media screen and (min-width: 992px) {
   .sidebar {
     float: right;
     clear: none;
   }
+  .sidebar-color {
+    text-align: left;
+  }
+}
+
+.sidebar .widget-news ul {
+    width: 100%;
 }
 
 /* CONTACT PAGE */

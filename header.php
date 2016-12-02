@@ -5,7 +5,10 @@
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 
-
+    <!-- Source Sans Pro Google Font - Replace Playfair -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- Open Sans Google Font - Use for everything else -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- Playfair Display Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 	<!-- Font Awesome -->
@@ -16,17 +19,86 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 	    <link rel="stylesheet" type="text/css" href="
 	        <?php bloginfo('stylesheet_url'); ?>
 	    " />
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="container-fluid"> <!-- Begin Fluid Container Div -->
-
+    <div id="pushobj" class="container-fluid"> <!-- Begin Fluid Container Div -->
+      <div id="menu">
+        <nav id="multilevelpushmenu">
+          <h2><i class="fa fa-reorder"></i>Tower Hill Insurance</h2>
+          <ul>
+              <li>
+                  <a href="http://www.rebeccaschoenrock.com/thig/our-company/">Our Company</a>
+                  <h2>Our Company</h2>
+                  <ul>
+                      <li>
+                          <a href="#">History</a>
+                      </li>
+                      <li>
+                          <a href="#">Companies</a>
+                      </li>
+                      <li>
+                          <a href="#">Careers</a>
+                      </li>
+                      <li>
+                          <a href="http://www.rebeccaschoenrock.com/thig/category/recent-news/">Recent News</a>
+                      </li>
+                      <li>
+                          <a href="#">Media</a>
+                      </li>
+                      <li>
+                          <a href="#">Reviews</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Products</a>
+                  <h2>Products</h2>
+                  <ul>
+                      <li>
+                          <a href="http://www.rebeccaschoenrock.com/thig/products/personal-coverage/">Personal Coverage</a>
+                      </li>
+                      <li>
+                          <a href="#">Commercial Coverage</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Resources</a>
+                  <h2>Resources</h2>
+                  <ul>
+                      <li>
+                          <a href="#">Claims</a>
+                      </li>
+                      <li>
+                          <a href="#">Learning Center</a>
+                      </li>
+                      <li>
+                          <a href="#">Storm Center</a>
+                      </li>
+                      <li>
+                          <a href="#">FAQs</a>
+                      </li>
+                      <li>
+                          <a href="#">Find an Agent</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="http://www.rebeccaschoenrock.com/thig/contact/">Contact Us</a>
+              </li>
+              <li>
+                  <a href="#">Customer Login</a>
+              </li>
+              <li>
+                  <a href="#">Agent Login</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
         <header class="row">
             <div class="col-md-12 globalmenu"> <!-- Global Nav -->
                 <!--h1><a href="<!?php $url = home_url('/'); echo $url; ?>"><!?php bloginfo('name'); ?></a></h1-->
